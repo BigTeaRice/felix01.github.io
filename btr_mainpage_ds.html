@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Big Tea Rice</title>
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            transition: background 200ms;
+        }
+
+        body {
+            font-size: 14px;
+            line-height: 1.7;
+            background-color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .container {
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9 {
+            display: block;
+            min-width: 1px;
+            position: relative;
+            float: left;
+        }
+
+        .col-1 { width: 10%; }
+        .col-2 { width: 20%; }
+        .col-3 { width: 30%; }
+        .col-4 { width: 40%; }
+        .col-5 { width: 50%; }
+        .col-6 { width: 60%; }
+        .col-7 { width: 70%; }
+        .col-8 { width: 80%; }
+        .col-9 { width: 90%; }
+
+        .fl { float: left; }
+        .fr { float: right; }
+
+        .cf:after, .cf:before {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .top-nav {
+            background-color: #eee;
+        }
+
+        .top-nav .item {
+            display: inline-block;
+            padding: 6px 10px;
+            color: #666;
+        }
+
+        .top-nav .item:hover {
+            color: #333;
+        }
+
+        .header {
+            padding: 20px 0;
+        }
+
+        .header .logo {
+            font-size: 30px;
+            color: rgb(212, 9, 192);
+        }
+
+        .header .search-bar {
+            border: 2px solid #dd182d;
+            background-color: #dd182d;
+        }
+
+        .header .search-bar input, .header .search-bar button {
+            border: 0;
+            padding: 10px;
+            display: block;
+            float: left;
+            outline: 0;
+        }
+
+        .header .search-bar input {
+            width: 80%;
+        }
+
+        .header .search-bar input:focus {
+            box-shadow: inset 0 2px 2px rgba(0, 0, 0, .3);
+        }
+
+        .header .search-bar button {
+            width: 20%;
+            color: #fff;
+            background-color: #dd182d;
+        }
+
+        .header .search-bar button:hover {
+            background-color: #ce1829;
+        }
+
+        .header .cart {
+            text-align: center;
+        }
+
+        .header .cart a {
+            float: right;
+            padding: 10px;
+            background: #fff;
+            border: 2px solid #eee;
+            width: 80%;
+            color: #dd182d;
+        }
+
+        .main-promote {
+            background-color: #eee;
+        }
+
+        .main-promote .cat {
+            background-color: green;
+            color: #fff;
+        }
+
+        .main-promote .cat .item a {
+            color: #fff;
+            width: 100%;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+
+        .main-promote .cat .item a:hover {
+            color: #eee;
+            background-color: rgba(0, 0, 0, .1);
+        }
+
+        .main-promote .info {
+            padding: 10px;
+            background-color: #fff;
+            color: #888;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+        }
+
+        .main-promote .info > * {
+            margin-bottom: 10px;
+        }
+
+        .main-promote .info .avatar {
+            width: 50px;
+            float: left;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 50%;
+            background-color: #777;
+        }
+
+        .cat-promote .title:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 5px;
+            height: 30px;
+            margin-right: 10px;
+            background-color: #dd182d;
+        }
+
+        .cat-promote .title {
+            font-size: 22px;
+        }
+
+        .cat-promote .item {
+            padding: 5px;
+        }
+
+        .cat-promote .item .card {
+            background-color: #ccc;
+            height: 300px;
+            border-radius: 4px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+        }
+
+        .footer {
+            text-align: center;
+            background: #eee;
+            color: #999;
+            margin-top: 30px;
+            padding: 30px 0;
+        }
+
+        .footer a {
+            color: #999;
+        }
+
+        .footer a:hover {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<div class="top-nav">
+    <div class="container cf">
+        <div class="fl"><a class="item" href="btr_mainpage.html">首页</a></div>
+        <div class="fr">
+            <a class="item" href="#">收藏夹</a>
+            <a class="item" href="#">登录</a>
+            <a class="item" href="#">注册</a>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="container cf">
+        <div class="col-2">
+            <div class="logo">大茶飯 BTR</div>
+        </div>
+        <div class="col-5 search-bar">
+            <input type="text">
+            <button>搜索</button>
+        </div>
+        <div class="col-3 cart"><a href="#">我的資料</a></div>
+    </div>
+</div>
+<div class="main-promote">
+    <div class="container cf">
+        <div class="col-2 cat">
+            <div class="item"><a href="btr_tech_index.html">股票</a></div>
+            <div class="item"><a href="btr_exchange_index.html">外匯</a></div>
+            <div class="item"><a href="btr_commodity_index.html">大宗商品</a></div>
+            <div class="item"><a href="btr_secore_index.html">足球</a></div>
+            <div class="item"><a href="btr_mark6_index.html">六合彩</a></div>
+            <div class="item"><a href="btr_horse_index.html">賽馬</a></div>
+            <div class="item"><a href="btr_weather_index.html">氣象</a></div>
+        </div>
+        <div class="col-6">
+            <div class="slider">
+                <img src="eagle.jpg" alt="轮播">
+            </div>
+            <div class="sub-promote">
+                <div class="col-5"><img src="aapl_01.png" alt=""></div>
+                <div class="col-5"><img src="testChart.png" alt=""></div>
+            </div>
+        </div>
+        <div class="col-2 info">
+            <div class="auth cf">
+                <div class="avatar"></div>
+                你好，欢迎!
+            </div>
+            <div class="anno">
+                <div class="title">公告</div>
+                <div class="content">
+                    由數據分析，作出預測。
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container cf">
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: btr.main@gmail.com</p>
+            <p>Phone: 123-456-7890</p>
+        </section>
+    </div>
+</div>
+</body>
+</html>
