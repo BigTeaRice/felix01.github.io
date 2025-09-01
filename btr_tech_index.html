@@ -1,0 +1,198 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTR_tech_index</title>
+</head>
+</style>      
+</head>
+<style>
+  table, th, td {
+    border: 1px solid black;
+  }
+  </style>
+  </head>
+  <body>
+  
+    
+  <table style="width:100%">
+    <tr>
+      <th>恆指  HSI</th>
+      <th>上證 SH</th>
+      <th>杜指 DJI</th>
+      <th>納指 NASDAQ</th> 
+      <th>台灣加權 TSE</th>
+    </tr>
+    <tr>
+      <td><a href=https://docs.google.com/spreadsheets/d/e/2PACX-1vQnWdf99A1mmz0DwJYI_QTgbZdiHCZTJH3UIXNN0_-eGH7j_UULoOU0rs34acXvcFoTQvzQE4EFdf82/pubhtml>歷史資料</a></td>
+      <td><a href="D:/felix/webpage/2330.TW.html">歷史資料</a></td>
+      <td><a href="D:/felix/webpage/2330.TW.html">歷史資料</a></td>
+      <td><a href="D:/felix/webpage/2330.TW.html">歷史資料</a></td>
+      <td><a href="D:/felix/webpage/2330.TW.html">歷史資料</a></td>
+    </tr>
+    <tr>
+      <td><a href="D:/felix/webpage/2330.TW.html">股票</a></td>
+      <td><a href="D:/felix/webpage/2330.TW.html">股票</a></td>
+      <td><a href="D:/felix/webpage/2330.TW.html">股票</a></td>
+      <td><a href="D:/felix/webpage/2330.TW.html">股票</a></td>
+      <td><a href="D:/felix/webpage/2330.TW.html">股票</a></td>
+    </tr>
+    <tr>
+      <td><a href="D:/felix/webpage/btr_tech_cs.html">個案分析</a></td>
+      <td><a href="D:/felix/webpage/2330.TW.html">個案分析</a></td>
+      <td><a href="D:/felix/webpage/2330.TW.html">個案分析</a></td>
+      <td><a href="D:/felix/webpage/2330.TW.html">個案分析</a></td>
+      <td><a href="D:/felix/webpage/2330.TW.html">個案分析</a></td>
+    </tr>
+   </table>
+  </body>
+
+
+<form>
+    <label> 選擇技術指標 </label>  
+    <select onchange="window.open(this.options[this.selectedIndex].value)">  
+      
+    <option value = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQnWdf99A1mmz0DwJYI_QTgbZdiHCZTJH3UIXNN0_-eGH7j_UULoOU0rs34acXvcFoTQvzQE4EFdf82/pubhtml?gid=1811477298&single=true">SMA 簡單移動平均
+    </option>  
+    <option value = "D:/felix/webpage/btr_MACD_index.html"> MACD   指數平滑異同移動平均線
+    </option>  
+    <option value = "D:/felix/webpage/btr_EMA_index.html"> EMA  指數移動平均
+    </option>  
+    <option value = "D:/felix/webpage/btr_BBS_index.html"> Bollinger Bands 布力加通道
+    </option>  
+    <option value = "D:/felix/webpage/btr_Kline_index.html"> K line  K綫
+    </option>
+    <option value = "D:/felix/webpage/btr_RSI_index.html"> RSI  相對強弱指數
+    </option>
+    <option value = "Volalitily"> Volalitily  波動率
+    </option>
+    <option value = "D:/felix/webpage/btr_SAR_index.html"> SAR  抛物線
+    </option>
+    <option value = "D:/felix/webpage/btr_WILLR_index.html"> WILLR  威廉指標
+    </option>
+    <option value = "D:/felix/webpage/btr_MTM_index.html"> MTM  動量指標
+    </option>
+    <option value = "D:/felix/webpage/btr_ATR_index.html"> ATR  平均真實波幅
+    </option>
+    <option value = "D:/felix/webpage/btr_HAMMER_index.html"> HAMMER  鎚子線
+    </option>
+    <option value = "D:/felix/webpage/btr_DOJI_index.html"> DOJI  十字星
+    </option>
+    <option value = "D:/felix/webpage/btr_MORINGSTAR_index.html"> MORINGSTAR  晨星
+    </option>
+    </select>  
+  </form>
+
+    <form>  
+      <label> 選擇人工智慧 AI</label>  
+      <select>  
+      <option value = "LR(Linear Regression)"> LR  線性回歸 
+      </option>  
+      <option value = "BS(Black-Scholes)"> BS   
+      </option>  
+      <option value = "ARIMA"> ARIMA  
+      </option>  
+      <option value = "Markov"> Markov 馬可夫
+      </option>  
+      <option value = "ATR"> ATR  
+      </option>
+      <option value = "LSTM"> LSTM  
+      </option>
+      </select>  
+    </form>
+
+
+<body>
+      <script>
+          Date.prototype.format = function (fmt) {
+              var o = {
+                  "y+": this.getFullYear, //年
+                  "M+": this.getMonth() + 1, //月份
+                  "d+": this.getDate(), //日
+                  "h+": this.getHours(), //小时
+                  "m+": this.getMinutes(), //分
+                  "s+": this.getSeconds() //秒
+              };
+              if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+              for (var k in o)
+                  if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+              return fmt;
+          }
+          setInterval("document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy-MM-dd hh:mm:ss');", 1000);
+      </script>
+  
+      <div id="dateTime" align=right border=3></div>
+
+      <input type="date" value="2023-06-01" />
+
+      <p><button>Submit</button></p>
+ </script>
+ 
+ <div class="col-lg-9">
+  <select id="dlgcobind"  class="form-control cboinds"  aria-invalid="false">
+                <option value="SMA">SMA - 簡單移動平均 </option>
+                <option value="EMA">EMA - 指數移動平均</option>
+                <option value="VOLUME.SMA">VOLUME.SMA - 簡單移動平均成交量</option>
+                <option value="HIGH">HIGH - 創新高</option>
+                <option value="LOW">LOW - 創新低</option>
+                <option value="RSI">RSI - 相對強弱指數</option>
+                <option value="MACD">MACD - 指數平滑異同移動平均線</option>
+                <option value="SAR">SAR - 抛物線</option>
+                <option value="WPR">WPR - 威廉指標</option>
+                <option value="ADX">ADX - 平均趨向指數</option>
+                <option value="STOCH">STOCH - 隨機指標</option>
+                <option value="ADOSC">ADOSC - 蔡金擺動指標</option>
+                <option value="CMF">CMF - 佳慶資金流量</option>
+                <option value="MTM">MTM - 動量指標</option>
+                <option value="MTMOSC">MTMOSC - 振盪指標</option>
+                <option value="ROC">ROC - 變動率</option>
+                <option value="ROC100">ROC100 - 變動率(百份比)</option>
+                <option value="STOCHRSI">STOCHRSI - 隨機相對強弱指數</option>
+                <option value="OBV">OBV - 能量潮</option>
+                <option value="BBANDS">BBANDS - 保力加通道</option>
+                <option value="CONTRISE">CONTRISE - 連日上升</option>
+                <option value="CONTFALL">CONTFALL - 連日下跌</option>
+                <option value="AO">AO - 動量振盪器</option>
+                <option value="ADO">ADO - 加速和減速震盪</option>
+                <option value="AROON">AROON - 阿隆指標</option>
+                <option value="CCI">CCI - 順勢指標</option>
+                <option value="DEMA">DEMA - 雙指數移動平均線</option>
+                <option value="TEMA">TEMA - 三次指數移動平均線</option>
+                <option value="SD">SD - 標準差</option>
+                <option value="MD">MD - 平均差</option>
+                <option value="ADXR">ADXR - 平均趨向指標評估</option>
+                <option value="DMA">DMA - Dickson 移動平均</option>
+                <option value="DPO">DPO - 區間震盪線</option>
+                <option value="DV2">DV2 - RSI(2) alternative</option>
+                <option value="ENVELOPE">ENVELOPE - 軌道線</option>
+                <option value="HMA">HMA - 船型移動平均</option>
+                <option value="HURST">HURST - 赫斯特指数</option>
+                <option value="ICHIMOKU">ICHIMOKU - Ichimoku雲</option>
+                <option value="KAMA">KAMA - Kaufman's Adaptive Moving Average</option>
+                <option value="KST">KST - 知道肯定的事</option>
+                <option value="PCTCHG">PCTCHG - 百分比變化</option>
+                <option value="PCTRANK">PCTRANK - 百分比排名</option>
+                <option value="ADJPCT">ADJPCT - 百分比改變數值</option>
+                <option value="PGO">PGO - 相當不錯的振盪器</option>
+                <option value="PRICEOSC">PRICEOSC - 價格擺動指數</option>
+                <option value="PPO">PPO - 百分比價格振盪器</option>
+                <option value="PPOSHORT">PPOSHORT - 百分比價格振盪器 Short</option>
+                <option value="RMI">RMI - 相對動量指標</option>
+                <option value="SMMA">SMMA - Smoothing移動平均</option>
+                <option value="TRIX">TRIX - TRIX</option>
+                <option value="TSI">TSI - 真實強弱指數</option>
+                <option value="UOS">UOS - 終極指標</option>
+                <option value="VORTEX">VORTEX - Vortex</option>
+                <option value="WAD">WAD - 威廉多空力度線</option>
+                <option value="WMA">WMA - 加權移動平均</option>
+                <option value="ZLEMA">ZLEMA - 零滯後指數移動平均線</option>
+                <option value="ZLIND">ZLIND - 零滯後 Indicator</option>
+              </select>
+</div>
+
+<p><button><a href="D:/felix/webpage/btr_mainpage.html">返回主頁</a></button></p>
+
+</html>
+</html>
