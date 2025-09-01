@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTR_exchange_index</title>
+    </head>
+</style>      
+</head>
+
+<body>
+    <header>
+        <div class="header-content wrapper-content">
+            <h1 class="logo">PEI-YUN</h1>
+            <nav class="header-nav">
+                <a href="" class="link__text">HOME</a>
+                <a href="" class="link__text">ABOUT</a>
+                <a href="" class="link__text">WORKS</a>
+            </nav>
+        </div>
+    </header>
+</body>
+
+
+    <form>  
+      <label> 選擇外幣 </label>  
+      <select>  
+      <option value = "USD/YEN"> USD/YEN   
+      </option>  
+      <option value = "USD/HKD"> USD/HKD   
+      </option>  
+      <option value = "USD/JPY"> USD/JPY  
+      </option>  
+      <option value = "USD/EUR"> USD/EUR  
+      </option>  
+      </select>  
+      </form> 
+      
+  <body>
+      <script>
+          Date.prototype.format = function (fmt) {
+              var o = {
+                  "y+": this.getFullYear, //年
+                  "M+": this.getMonth() + 1, //月份
+                  "d+": this.getDate(), //日
+                  "h+": this.getHours(), //小时
+                  "m+": this.getMinutes(), //分
+                  "s+": this.getSeconds() //秒
+              };
+              if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+              for (var k in o)
+                  if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+              return fmt;
+          }
+          setInterval("document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy-MM-dd hh:mm:ss');", 1000);
+      </script>
+  
+      <div id="dateTime"></div>
+  </body>
+  <input type="date" value="2023-06-01" />
+
+  <p><button>Submit</button></p>
+</script>
+
+<p>留言</p>
+<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+<p><button><a href="D:/felix/webpage/btr_mainpage.html">送出</a></button></p>
+
+
+<body>
+    <h1>綜合分析系統</h1>
+    
+    <p>分析結果</p>
+    <img src="testChart.png" alt="ML圖片">
+ </body>
+
+ <html>
+  <head>
+    <title></title>
+    </head>
+    <body>
+    <h1>Registration form</h1>
+      <form action="showbio">
+        <label>Username</label>
+        <input type="name" name="username"><br>
+        <label>Email</label>
+        <input type="email" name="email"><br>
+        <label>Hobbies</label>
+        <input type="name" name="hobbies"><br>
+        <input type="submit" name="">
+        </form>
+    </body>
+
+<html>
+  
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>系统时间</title>
+  </head>
+  
+  <body>
+      <script>
+          Date.prototype.format = function (fmt) {
+              var o = {
+                  "y+": this.getFullYear, //年
+                  "M+": this.getMonth() + 1, //月份
+                  "d+": this.getDate(), //日
+                  "h+": this.getHours(), //小时
+                  "m+": this.getMinutes(), //分
+                  "s+": this.getSeconds() //秒
+              };
+              if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+              for (var k in o)
+                  if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+              return fmt;
+          }
+          setInterval("document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy-MM-dd hh:mm:ss');", 1000);
+      </script>
+  
+      <div id="dateTime"></div>
+  </body>
+</script>
+</html>
+
+<p><button><a href="D:/felix/webpage/btr_mainpage.html">返回主頁</a></button></p>
+</html>
+</html>
